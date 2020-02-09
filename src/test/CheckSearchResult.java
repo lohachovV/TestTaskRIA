@@ -12,6 +12,9 @@ public class CheckSearchResult extends BaseTest{
     @Test
     public void checkSearchResult() {
         mainPage.searching(serchRequest);
+        searchPage.autocompliteText(serchRequest)
+                .searchCriterias(serchRequest)
+                .searchingResults(serchRequest);
 
     }
 
